@@ -6,6 +6,7 @@
 #include "GameFramework/Actor.h"
 #include "TestActor.generated.h"
 
+class UEvent;
 UCLASS()
 class HEXWORKS_API ATestActor : public AActor
 {
@@ -22,4 +23,7 @@ protected:
 public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
+
+	UPROPERTY(BlueprintReadOnly, Category = "Event")
+	UEvent* EventCPP;
 };
