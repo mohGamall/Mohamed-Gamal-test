@@ -47,7 +47,7 @@ void ATestActor::BeginPlay()
 	FEventData DealerID;
 	if (EventCPP->GetData("DamageDealerID", DealerID))
 	{
-		UE_LOG(LogTemp, Warning, TEXT("PlayerID: %s"), *DealerID.GetGUID().ToString());
+		UE_LOG(LogTemp, Warning, TEXT("DealerID: %s"), *DealerID.GetGUID().ToString());
 	}
 	FEventData Position;
 	if (EventCPP->GetData("Position", Position))

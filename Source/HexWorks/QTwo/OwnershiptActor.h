@@ -4,7 +4,6 @@
 #include "GameFramework/Actor.h"
 #include "OwnershiptActor.generated.h"
 
-
 class B
 {
 public:
